@@ -21,3 +21,10 @@ echo '<p></p>';
 $greeting = sayHello('Mary', 21);
 
 echo $greeting;
+
+echo '<p></p>';
+function timesBy3DivideBy2(int $number): float
+{
+    return ($number * 3 / 2);
+}
+echo timesBy3DivideBy2(6);
