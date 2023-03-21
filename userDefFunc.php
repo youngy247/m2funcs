@@ -7,14 +7,17 @@ echo '<h1>User-defined Functions</h1>';
  *
  * @param $name string A person's name.
  * @param $age int A person's age.
- * @return void
+ * @return string The greeting.
  */
 function sayHello($name, $age)
 {
-    echo 'Hello, ' . $name . '! You are ' . $age . '.';
+    return 'Hello, ' . $name . '! You are ' . $age . '.';
 }
 
-sayHello('adam', 21);
-echo '<p>&nbsp;</p>';
+echo sayHello('adam', 21);
 echo '<p></p>';
-sayHello('george', 65);
+echo sayHello('george', 65);
+echo '<p></p>';
+$greeting = sayHello('Mary', 21);
+
+echo $greeting;
