@@ -1,8 +1,7 @@
 <?php
 
-
-function monthName($monthNumber) {
-    $months = array(
+function monthName(int $monthNumber) {
+    $months = [
         1 => 'January',
         2 => 'February',
         3 => 'March',
@@ -15,7 +14,7 @@ function monthName($monthNumber) {
         10 => 'October',
         11 => 'November',
         12 => 'December'
-    );
+    ];
 
     if ($monthNumber >= 1 && $monthNumber <= 12) {
         return $months[$monthNumber];
@@ -25,3 +24,22 @@ function monthName($monthNumber) {
 }
 
 echo monthName(4);
+
+function array_insert($array, $value, $index) {
+    // Insert the value at the specified index using array_splice()
+    array_splice($array, $index, 0, $value);
+
+    // Return the modified array
+    return $array;
+}
+
+$someNames = ['Anna', 'Michael', 'Brent', 'Adam', 'Dom', 'Henry', 'James'];
+$allNames = array_insert($someNames, 'Phil', 4);
+echo '<pre>';
+print_r($allNames);
+echo '</pre>';
+
+
+
+
+
