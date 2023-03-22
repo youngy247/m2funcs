@@ -1,6 +1,6 @@
 <?php
 
-function monthName(int $monthNumber) {
+function monthName(int $monthNumber): string {
     $months = [
         1 => 'January',
         2 => 'February',
@@ -25,11 +25,8 @@ function monthName(int $monthNumber) {
 
 echo monthName(4);
 
-function array_insert($array, $value, $index) {
-    // Insert the value at the specified index using array_splice()
+function array_insert($array, $value, $index): array {
     array_splice($array, $index, 0, $value);
-
-    // Return the modified array
     return $array;
 }
 
@@ -40,7 +37,7 @@ print_r($allNames);
 echo '</pre>';
 
 
-function sumSquares($array) {
+function sumSquares($array): int {
     $sum = 0;
     foreach ($array as $value) {
         $sum += $value * $value;
