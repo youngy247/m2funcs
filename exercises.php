@@ -48,19 +48,24 @@ function sumSquares($array) {
     return $sum;
 }
 
-function average($array): float {
-    $count = count($array);
+function average($arrayAverage): float {
+    $count = count($arrayAverage);
     if ($count == 0) {
         return 0;
     }
-    $sum = array_sum($array);
+    $sum = array_sum($arrayAverage);
     return $sum / $count;
 }
 
-   $array = [2, 4, 6];
-    echo "Average: " . average($array) . "\n";
+   $arrayAverage = [2, 4, 6];
+    echo "Average: " . average($arrayAverage) . "\n";
 
+echo '<p></p>';
+    function multiply(int $num1, int $num2 = 2) {
+        return $num1 * $num2;
+    };
 
+    echo multiply(3);
 
 
 
