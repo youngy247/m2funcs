@@ -48,6 +48,20 @@ function sumSquares($array) {
     return $sum;
 }
 
+function average($array): float {
+    $count = count($array);
+    if ($count == 0) {
+        return 0;
+    }
+    $sum = array_sum($array);
+    return $sum / $count;
+}
+
+   $array = array(2, 4, 6);
+    echo "Average: " . average($array) . "\n";
+
+
+
 
 
 
