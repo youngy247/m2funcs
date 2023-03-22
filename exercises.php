@@ -25,7 +25,7 @@ function monthName(int $monthNumber): string {
 
 echo monthName(4);
 
-function array_insert($array, $value, $index): array {
+function array_insert($array, string $value, int $index): array {
     array_splice($array, $index, 0, $value);
     return $array;
 }
