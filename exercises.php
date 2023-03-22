@@ -25,7 +25,7 @@ function monthName(int $monthNumber): string {
 
 echo monthName(4);
 
-function array_insert($array, $value, $index): array {
+function array_insert(arr $array, string $value, int $index): array {
     array_splice($array, $index, 0, $value);
     return $array;
 }
@@ -37,7 +37,7 @@ print_r($allNames);
 echo '</pre>';
 
 
-function sumSquares($array): int {
+function sumSquares(arr $array): int {
     $sum = 0;
     foreach ($array as $value) {
         $sum += $value * $value;
