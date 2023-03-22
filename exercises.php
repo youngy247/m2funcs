@@ -1,5 +1,7 @@
 <?php
-
+/*
+ *
+ */
 function monthName(int $monthNumber): string {
     $months = [
         1 => 'January',
@@ -58,7 +60,7 @@ function average($arrayAverage): float {
     echo "Average: " . average($arrayAverage) . "\n";
 
 echo '<p></p>';
-    function multiply(int $num1, int $num2 = 2) {
+    function multiply(int $num1, int $num2 = 2): int {
         return $num1 * $num2;
     };
 
