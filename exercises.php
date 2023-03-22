@@ -57,7 +57,7 @@ function average($array): float {
     return $sum / $count;
 }
 
-   $array = array(2, 4, 6);
+   $array = [2, 4, 6];
     echo "Average: " . average($array) . "\n";
 
 
