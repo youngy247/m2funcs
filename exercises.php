@@ -40,6 +40,14 @@ print_r($allNames);
 echo '</pre>';
 
 
+function sumSquares($array) {
+    $sum = 0;
+    foreach ($array as $value) {
+        $sum += $value * $value;
+    }
+    return $sum;
+}
+
 
 
 
