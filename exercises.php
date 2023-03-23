@@ -77,3 +77,27 @@ echo '<pre>';
 print_r(explode( " ", $cityList));
 echo '</pre>';
 
+
+
+
+function findCommon($arr1, $arr2) {
+    $common = [];
+    foreach ($arr1 as $val1){
+        foreach($arr2 as $val2){
+            if($val1 == $val2){
+                $common[]= $val1;
+                break;
+            }
+        }
+    }
+    return $common;
+}
+
+$arr1 = [1, 2, 3, 5, 8, 13];
+$arr2 = [1, 4, 8, 11];
+$common = findCommon($arr1, $arr2);
+print_r($common);
+
+
+
+
