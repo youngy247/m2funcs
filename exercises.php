@@ -96,7 +96,9 @@ function findCommon($arr1, $arr2) {
 $arr1 = [1, 2, 3, 5, 8, 13];
 $arr2 = [1, 4, 8, 11];
 $common = findCommon($arr1, $arr2);
+echo '<pre>';
 print_r($common);
+echo '</pre>';
 
 
 
