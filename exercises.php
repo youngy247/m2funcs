@@ -72,4 +72,8 @@ echo '<p></p>';
 
 echo  tidyString('ADAM is HAPpY');
 
+$cityList = 'barcelona, madrid, cardif, milan';
+echo '<pre>';
+print_r(explode( " ", $cityList));
+echo '</pre>';
 
