@@ -100,6 +100,17 @@ echo '<pre>';
 print_r($common);
 echo '</pre>';
 
+function filter_falsy($arr): array
+{
+    return array_filter($arr, function($value) {
+        return $value !== false && $value !== null && $value !== 0 && $value !== '';
+    });
+}
 
+
+$filtered = filter_falsy([23, '', 'abcd', true, null, false, 0]);
+echo '<pre>';
+print_r($filtered); // Array [23, 'abcd', true]
+echo '</pre>';
 
 
