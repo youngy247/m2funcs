@@ -66,6 +66,10 @@ echo '<p></p>';
 
     echo multiply(3);
 
+    function tidyString(string $str):string {
+        return strtolower(trim($str));
+    };
 
+echo  tidyString('ADAM is HAPpY');
 
 
